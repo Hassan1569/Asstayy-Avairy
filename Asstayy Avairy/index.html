@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Asstayyy Aviary – Rare & Exotic Birds</title>
+  <link rel="icon" type="image/x-icon" href="favicon_io/favicon-16x16.png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;1,400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav class="navbar-custom d-flex align-items-center justify-content-between flex-wrap gap-2">
+  <a class="brand-name" href="#" onclick="showPage('home')">Asstayyy <span>Aviary</span></a>
+  <div class="d-flex gap-1 flex-wrap">
+    <a class="nav-pill active" id="nav-home"     href="#" onclick="showPage('home');     return false;">Home</a>
+    <a class="nav-pill"        id="nav-products" href="#" onclick="showPage('products'); return false;">Products</a>
+    <a class="nav-pill"        id="nav-gallery"  href="#" onclick="showPage('gallery');  return false;">Gallery</a>
+    <a class="nav-pill"        id="nav-about"    href="#" onclick="showPage('about');    return false;">About Us</a>
+    <a class="nav-pill"        id="nav-contact"  href="#" onclick="showPage('contact');  return false;">Contact</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     HOME PAGE
+══════════════════════════════════════════ -->
+<div id="page-home" class="page active">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <div class="hero-tag fade-up">Karachi's Finest Aviary</div>
+      <h1 class="hero-h1 fade-up delay-1">Where Wings<br><em>Find</em> Their<br>Forever Home.</h1>
+      <p class="hero-sub fade-up delay-2">Hand-raised, health-certified doves, lovebirds, and cockatiels — brought to you with decades of avian expertise and genuine love for birds.</p>
+      <div class="d-flex gap-3 flex-wrap fade-up delay-3">
+        <a class="btn-terra" href="#" onclick="showPage('gallery'); return false;">Browse Birds</a>
+        <a class="btn-outline-terra" href="#" onclick="showPage('contact'); return false;">Ask a Breeder</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-blob">
+        <div class="hero-bird-emoji">🕊️</div>
+      </div>
+      <div class="hero-badge">
+        <strong>200+</strong>
+        Happy Bird Families
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-strip">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-6 col-md-3"><div class="stat-item"><div class="stat-num">12+</div><div class="stat-label">Years Experience</div></div></div>
+        <div class="col-6 col-md-3"><div class="stat-item"><div class="stat-num">3</div><div class="stat-label">Bird Varieties</div></div></div>
+        <div class="col-6 col-md-3"><div class="stat-item"><div class="stat-num">200+</div><div class="stat-label">Birds Sold</div></div></div>
+        <div class="col-6 col-md-3"><div class="stat-item"><div class="stat-num">98%</div><div class="stat-label">Satisfaction Rate</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED BIRDS -->
+  <section class="birds-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-6">
+          <p class="section-label">Our Birds</p>
+          <h2 class="section-title">Meet the <em>Stars</em><br>of Our Aviary</h2>
+        </div>
+        <div class="col-lg-6 d-flex align-items-end">
+          <p style="color:var(--muted); font-size:.95rem; line-height:1.7;">Every bird at Asstayyy Aviary is raised by hand, socialized daily, and fully vet-checked before joining your family.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="bird-card">
+            <div class="bird-card-img bg-dove"><span>🕊️</span></div>
+            <div class="bird-card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <div>
+                  <div class="bird-name">Diamond Dove</div>
+                  <div class="bird-species">Geopelia cuneata</div>
+                </div>
+                <span class="badge-avail">In Stock</span>
+              </div>
+              <p class="bird-desc">Gentle, low-maintenance, and mesmerizingly graceful — diamond doves are ideal for beginners and families alike. Soft coos, calm temperament.</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="bird-price">Rs 2,500 <small>/ pair</small></div>
+                <a class="btn-terra" style="padding:.6rem 1.2rem; font-size:.8rem;" href="#" onclick="showPage('contact');return false;">Enquire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="bird-card">
+            <div class="bird-card-img bg-love"><span>🦜</span></div>
+            <div class="bird-card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <div>
+                  <div class="bird-name">Lovebird</div>
+                  <div class="bird-species">Agapornis roseicollis</div>
+                </div>
+                <span class="badge-avail">In Stock</span>
+              </div>
+              <p class="bird-desc">Vibrant, affectionate, and endlessly entertaining — lovebirds form deep bonds with their owners. Available in stunning colour mutations.</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="bird-price">Rs 3,800 <small>/ pair</small></div>
+                <a class="btn-terra" style="padding:.6rem 1.2rem; font-size:.8rem;" href="#" onclick="showPage('contact');return false;">Enquire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="bird-card">
+            <div class="bird-card-img bg-cockatiel"><span>🐦</span></div>
+            <div class="bird-card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <div>
+                  <div class="bird-name">Cockatiel</div>
+                  <div class="bird-species">Nymphicus hollandicus</div>
+                </div>
+                <span class="badge-avail">In Stock</span>
+              </div>
+              <p class="bird-desc">Playful whistlers with big personalities — cockatiels are hand-tamed companions that love interaction and can learn simple tunes with ease.</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="bird-price">Rs 4,500 <small>/ pair</small></div>
+                <a class="btn-terra" style="padding:.6rem 1.2rem; font-size:.8rem;" href="#" onclick="showPage('contact');return false;">Enquire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-5">
+          <p class="section-label">Why Choose Us</p>
+          <h2 class="section-title">Breeding with <em>Heart</em><br>& Expertise</h2>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div class="feature-box">
+            <div class="feature-icon">🏥</div>
+            <div class="feature-title">Vet Certified</div>
+            <p class="feature-text">Every bird comes with a full health check from our in-house avian vet before leaving the aviary.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="feature-box">
+            <div class="feature-icon">🤝</div>
+            <div class="feature-title">Hand Raised</div>
+            <p class="feature-text">Our birds are socialized from day one — tame, trusting, and ready to bond with your family.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="feature-box">
+            <div class="feature-icon">📦</div>
+            <div class="feature-title">Safe Delivery</div>
+            <p class="feature-text">We deliver within Karachi in ventilated, padded carriers so your bird arrives calm and stress-free.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="feature-box">
+            <div class="feature-icon">💬</div>
+            <div class="feature-title">Lifetime Support</div>
+            <p class="feature-text">Questions after purchase? Our breeders are always a WhatsApp message away — forever.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonial-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="section-label">Customer Love</p>
+        <h2 class="section-title">What Our <em>Families</em> Say</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testi-text">Got a pair of lovebirds from Hassan and they are the most tame, beautiful birds I've ever owned. Customer service was excellent throughout!</p>
+            <div class="testi-author">— Fatima A., DHA Karachi</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testi-text">My cockatiel arrived healthy and already responding to whistles. The care package and feeding guide they included was so thoughtful.</p>
+            <div class="testi-author">— Usman K., Gulshan Karachi</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testi-text">The doves are absolutely stunning. Gentle, quiet, and perfect for our apartment. Will definitely be ordering again for my parents.</p>
+            <div class="testi-author">— Sara M., Clifton Karachi</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /home page -->
+
+
+<!-- ══════════════════════════════════════════
+     GALLERY PAGE
+══════════════════════════════════════════ -->
+<div id="page-gallery" class="page">
+  <div class="gallery-hero">
+    <div class="container">
+      <p class="section-label" style="color:var(--sage);">Asstayyy Aviary</p>
+      <h1 class="section-title" style="color:var(--cream); font-size:3.5rem;">Our <em style="color:var(--highlight);">Feathered</em> Family</h1>
+      <p style="color:rgba(255,255,255,.5); max-width:480px; margin:1rem auto 0; font-size:1rem; line-height:1.7;">Browse through our available birds and find the one that steals your heart.</p>
+    </div>
+  </div>
+  <div class="gallery-grid">
+    <div class="container">
+      <div class="gallery-filter text-center">
+        <button class="filter-btn active" onclick="filterGallery('all', this)">All Birds</button>
+        <button class="filter-btn" onclick="filterGallery('dove', this)">Doves</button>
+        <button class="filter-btn" onclick="filterGallery('lovebird', this)">Lovebirds</button>
+        <button class="filter-btn" onclick="filterGallery('cockatiel', this)">Cockatiels</button>
+      </div>
+      <div class="row" id="gallery-container">
+        <div class="col-md-4 gallery-card" data-cat="dove">
+          <div class="gallery-item">
+            <div class="gallery-item-inner g-bg1">🕊️</div>
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <strong>Diamond Dove – Pair</strong>
+                <span>Rs 2,500 · Available</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 gallery-card" data-cat="lovebird">
+          <div class="gallery-item">
+            <div class="gallery-item-inner g-bg2">🦜</div>
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <strong>Peach-faced Lovebird</strong>
+                <span>Rs 3,800 · Available</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 gallery-card" data-cat="cockatiel">
+          <div class="gallery-item">
+            <div class="gallery-item-inner g-bg3">🐦</div>
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <strong>Normal Grey Cockatiel</strong>
+                <span>Rs 4,500 · Available</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 gallery-card" data-cat="dove">
+          <div class="gallery-item">
+            <div class="gallery-item-inner g-bg4">🕊️</div>
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <strong>White Dove – Single</strong>
+                <span>Rs 1,400 · Available</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 gallery-card" data-cat="lovebird">
+          <div class="gallery-item">
+            <div class="gallery-item-inner g-bg5">🦜</div>
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <strong>Blue Mutation Lovebird</strong>
+                <span>Rs 5,500 · Available</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 gallery-card" data-cat="cockatiel">
+          <div class="gallery-item">
+            <div class="gallery-item-inner g-bg6">🐦</div>
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <strong>Lutino Cockatiel – Pair</strong>
+                <span>Rs 7,000 · Available</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 gallery-card" data-cat="lovebird">
+          <div class="gallery-item">
+            <div class="gallery-item-inner g-bg2">🦜</div>
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <strong>Violet Mutation Lovebird</strong>
+                <span>Rs 6,200 · Available</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 gallery-card" data-cat="cockatiel">
+          <div class="gallery-item">
+            <div class="gallery-item-inner g-bg3">🐦</div>
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <strong>Pied Cockatiel – Single</strong>
+                <span>Rs 3,800 · Available</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 gallery-card" data-cat="dove">
+          <div class="gallery-item">
+            <div class="gallery-item-inner g-bg1">🕊️</div>
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <strong>Ringneck Dove</strong>
+                <span>Rs 1,800 · Available</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /gallery page -->
+
+
+<!-- ══════════════════════════════════════════
+     ABOUT US PAGE
+══════════════════════════════════════════ -->
+<div id="page-about" class="page">
+  <section class="about-hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <div class="about-blob-wrap">
+            <div class="about-blob">🕊️</div>
+          </div>
+        </div>
+        <div class="col-lg-7 about-content">
+          <p class="section-label">Our Story</p>
+          <h2>Born From a <em style="font-style:italic; color:var(--terracotta);">Lifelong</em> Love<br>of Birds</h2>
+          <p>Asstayyy Aviary began in 2012 as a small backyard passion project in Karachi — a few pairs of doves, a hand-built cage, and a deep fascination with avian behaviour. Over the years, that passion grew into one of Karachi's most trusted bird breeding operations.</p>
+          <p>We believe every bird deserves to be raised in a clean, enriching environment and every buyer deserves honest, expert guidance. That philosophy hasn't changed since day one.</p>
+          <a class="btn-terra mt-2" href="#" onclick="showPage('contact');return false;">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section style="padding:5rem 0; background:var(--soft-white);">
+    <div class="container">
+      <p class="section-label text-center">Our Journey</p>
+      <h2 class="section-title text-center mb-5">How We <em>Grew</em></h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-year">2012</div>
+              <div class="timeline-body">
+                <h5>The First Pair</h5>
+                <p>We started with two pairs of diamond doves in a small backyard aviary in Gulshan-e-Iqbal, Karachi. Word spread quickly among neighbours.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2015</div>
+              <div class="timeline-body">
+                <h5>Lovebirds Join the Family</h5>
+                <p>Demand for colourful companion birds led us to introduce peach-faced and blue mutation lovebirds. Our first 50 pairs sold within weeks.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2018</div>
+              <div class="timeline-body">
+                <h5>Cockatiels & Expansion</h5>
+                <p>We expanded to a dedicated aviary space and introduced cockatiels — our most popular breed to date. Full-time veterinary partnership established.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2024</div>
+              <div class="timeline-body">
+                <h5>Going Digital</h5>
+                <p>Launched online enquiries and delivery services citywide. Now serving over 200 happy bird families across Karachi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section style="padding:5rem 0; background:var(--warm-sand);">
+    <div class="container">
+      <p class="section-label text-center">The People</p>
+      <h2 class="section-title text-center mb-5">Meet the <em>Team</em></h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-sm-6 col-md-4">
+          <div class="team-card">
+            <div class="team-avatar">👨</div>
+            <div class="team-name">Asad Rehman</div>
+            <div class="team-role mt-1">Founder & Head Breeder</div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="team-card">
+            <div class="team-avatar">👩</div>
+            <div class="team-name">Dr. Sana Malik</div>
+            <div class="team-role mt-1">Avian Veterinarian</div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="team-card">
+            <div class="team-avatar">🧑</div>
+            <div class="team-name">Bilal Ahmed</div>
+            <div class="team-role mt-1">Bird Care Specialist</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /about page -->
+
+
+<!-- ══════════════════════════════════════════
+     CONTACT PAGE
+══════════════════════════════════════════ -->
+<div id="page-contact" class="page">
+  <section class="contact-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="section-label">Get in Touch</p>
+        <h2 class="section-title">We'd Love to <em>Hear</em> From You</h2>
+        <p style="color:var(--muted); margin-top:.8rem; max-width:480px; margin-left:auto; margin-right:auto; font-size:.95rem;">Whether you're ready to buy, just curious, or need advice on caring for a bird — we're here.</p>
+      </div>
+      <div class="row g-4">
+        <!-- INFO -->
+        <div class="col-lg-4">
+          <div class="contact-info-block">
+            <h3>Asstayyy Aviary</h3>
+            <p>Karachi, Pakistan</p>
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <div class="contact-item-label">Address</div>
+                <div class="contact-item-val">Block 14, Gulshan-e-Iqbal,<br>Karachi, Sindh</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <div class="contact-item-label">Phone / WhatsApp</div>
+                <div class="contact-item-val">+92 300 000 0000</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <div class="contact-item-label">Email</div>
+                <div class="contact-item-val">info@asstayyaviary.pk</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">🕐</div>
+              <div>
+                <div class="contact-item-label">Hours</div>
+                <div class="contact-item-val">Mon–Sat · 9 AM – 6 PM<br>Sunday · 10 AM – 3 PM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FORM -->
+        <div class="col-lg-8">
+          <div class="contact-form-wrap">
+            <h3>Send an Enquiry</h3>
+            <p class="sub">Fill out the form and we'll get back to you within 24 hours.</p>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="form-label-custom">Your Name</label>
+                  <input type="text" class="form-control-custom" placeholder="e.g. Ali Khan" id="f-name"/>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="form-label-custom">Phone / WhatsApp</label>
+                  <input type="tel" class="form-control-custom" placeholder="+92 300 000 0000" id="f-phone"/>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label class="form-label-custom">Email Address</label>
+                  <input type="email" class="form-control-custom" placeholder="you@example.com" id="f-email"/>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="form-label-custom">Bird Interest</label>
+                  <select class="form-control-custom select-custom" id="f-bird">
+                    <option value="">Select a bird…</option>
+                    <option>Diamond Dove</option>
+                    <option>White Dove</option>
+                    <option>Ringneck Dove</option>
+                    <option>Peach-faced Lovebird</option>
+                    <option>Blue Mutation Lovebird</option>
+                    <option>Violet Lovebird</option>
+                    <option>Normal Grey Cockatiel</option>
+                    <option>Lutino Cockatiel</option>
+                    <option>Pied Cockatiel</option>
+                    <option>General Enquiry</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="form-label-custom">Budget (Rs)</label>
+                  <select class="form-control-custom select-custom" id="f-budget">
+                    <option value="">Select range…</option>
+                    <option>Under Rs 2,000</option>
+                    <option>Rs 2,000 – 4,000</option>
+                    <option>Rs 4,000 – 7,000</option>
+                    <option>Rs 7,000+</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label class="form-label-custom">Message</label>
+                  <textarea class="form-control-custom" placeholder="Tell us about yourself, your living situation, experience with birds, or any questions you have…" id="f-msg"></textarea>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn-terra w-100" style="padding:1rem;" onclick="submitForm()">Send Enquiry →</button>
+                <div class="form-success" id="form-success">
+                  ✅ &nbsp;Thank you! We'll be in touch within 24 hours.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /contact page -->
+
+
+<!-- ══════════════════════════════════════════
+     PRODUCTS PAGE
+══════════════════════════════════════════ -->
+<div id="page-products" class="page">
+
+  <!-- Hero -->
+  <div class="products-hero">
+    <div class="container products-hero-inner">
+      <div class="row align-items-end g-4">
+        <div class="col-lg-7">
+          <p class="section-label">Asstayyy Aviary</p>
+          <h1>Our <em>Full</em> Collection</h1>
+          <p>Live birds, accessories, food & bundles — everything your feathered companion needs, all in one place.</p>
+        </div>
+        <div class="col-lg-5">
+          <div class="search-wrap ms-lg-auto">
+            <span class="search-icon">🔍</span>
+            <input type="text" class="search-input" id="prod-search" placeholder="Search birds, food, cages…" oninput="runFilter()" />
+            <button class="search-clear" id="search-clear-btn" onclick="clearSearch()">✕</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile filter overlay -->
+  <div class="filter-overlay" id="filter-overlay" onclick="closeMobileFilter()"></div>
+
+  <div class="prod-section">
+    <div class="container">
+
+      <!-- Toolbar -->
+      <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-4">
+        <div class="d-flex align-items-center gap-3 flex-wrap">
+          <button class="filter-toggle-btn" onclick="openMobileFilter()">
+            ⚙️ Filters
+          </button>
+          <p class="result-count mb-0">Showing <strong id="result-num">18</strong> of <strong>18</strong> products</p>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <span style="font-size:.8rem; color:var(--muted);">Sort by</span>
+          <select class="sort-select" id="prod-sort" onchange="runFilter()">
+            <option value="default">Featured</option>
+            <option value="price-asc">Price: Low → High</option>
+            <option value="price-desc">Price: High → Low</option>
+            <option value="name-asc">Name: A → Z</option>
+            <option value="rating">Top Rated</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row g-0">
+        <!-- Sidebar -->
+        <div class="col-lg-3 pe-lg-4">
+          <div class="filter-sidebar" id="filter-sidebar">
+            <button class="filter-close" onclick="closeMobileFilter()">✕</button>
+            <div class="filter-sidebar-title">🎛️ Filter Products</div>
+
+            <div class="filter-group-label">Category</div>
+            <label class="cat-check-label"><input type="checkbox" value="dove"      onchange="runFilter()" checked> Doves <span class="cat-count">4</span></label>
+            <label class="cat-check-label"><input type="checkbox" value="lovebird"  onchange="runFilter()" checked> Lovebirds <span class="cat-count">4</span></label>
+            <label class="cat-check-label"><input type="checkbox" value="cockatiel" onchange="runFilter()" checked> Cockatiels <span class="cat-count">4</span></label>
+            <label class="cat-check-label"><input type="checkbox" value="accessory" onchange="runFilter()" checked> Accessories <span class="cat-count">3</span></label>
+            <label class="cat-check-label"><input type="checkbox" value="food"      onchange="runFilter()" checked> Bird Food <span class="cat-count">2</span></label>
+            <label class="cat-check-label"><input type="checkbox" value="bundle"    onchange="runFilter()" checked> Bundles <span class="cat-count">1</span></label>
+
+            <div class="filter-group-label">Max Price</div>
+            <div class="price-range-wrap">
+              <div class="price-labels">
+                <span>Rs 0</span>
+                <span>Up to <strong id="price-display">Rs 15,000</strong></span>
+              </div>
+              <input type="range" id="price-range" min="500" max="15000" step="500" value="15000"
+                     oninput="updatePriceDisplay(this.value); runFilter()" />
+            </div>
+
+            <div class="filter-group-label">Availability</div>
+            <label class="cat-check-label"><input type="checkbox" value="instock" onchange="runFilter()" checked> In Stock</label>
+            <label class="cat-check-label"><input type="checkbox" value="order"   onchange="runFilter()" checked> On Order</label>
+
+            <button class="btn-reset" onclick="resetFilters()">↺ Reset All Filters</button>
+          </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="col-lg-9">
+          <div class="row g-4" id="prod-grid">
+
+            <!-- ── DOVES ── -->
+            <div class="col-sm-6 col-xl-4 prod-item" data-cat="dove" data-price="2500" data-name="Diamond Dove Pair" data-rating="5" data-avail="instock">
+              <div class="prod-card">
+                <span class="prod-badge badge-new">New Clutch</span>
+                <div class="prod-img pb-dove">🕊️</div>
+                <div class="prod-body">
+                  <div class="prod-cat-tag">Dove</div>
+                  <div class="prod-name">Diamond Dove</div>
+                  <div class="prod-species">Geopelia cuneata</div>
+                  <div class="prod-stars">★★★★★ <span>(24 reviews)</span></div>
+                  <p class="prod-desc">Gentle, low-maintenance pair — perfectly suited for beginners. Hand-raised, vet-checked, ready for rehoming.</p>
+                  <div class="prod-footer">
+                    <div><div class="prod-price">Rs 2,500 <small>/ pair</small></div></div>
+                    <button class="btn-add" onclick="enquire('Diamond Dove')">Enquire →</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-xl-4 prod-item" data-cat="dove" data-price="1400" data-name="White Dove Single" data-rating="4.5" data-avail="instock">
+              <div class="prod-card">
+                <span class="prod-badge badge-hot">Popular</span>
+                <div class="prod-img pb-dove">🕊️</div>
+                <div class="prod-body">
+                  <div class="prod-cat-tag">Dove</div>
+                  <div class="prod-name">White Dove</div>
+                  <div class="prod-species">Columba livia domestica</div>
+                  <div class="prod-stars">★★★★½ <span>(18 reviews)</span></div>
+                  <p class="prod-desc">Snow-white plumage, serene temperament. A timeless symbol of peace — perfect for apartments and families.</p>
+                  <div class="prod-footer">
+                    <div><div class="prod-price">Rs 1,400 <small>/ single</small></div></div>
+                    <button class="btn-add" onclick="enquire('White Dove')">Enquire →</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-xl-4 prod-item" data-cat="dove" data-price="1800" data-name="Ringneck Dove" data-rating="4" data-avail="instock">
+              <div class="prod-card">
+                <div class="prod-img pb-dove">🕊️</div>
+                <div class="prod-body">
+                  <div class="prod-cat-tag">Dove</div>
+                  <div class="prod-name">Ringneck Dove</div>
+                  <div class="prod-species">Streptopelia risoria</div>
+                  <div class="prod-stars">★★★★☆ <span>(11 reviews)</span></div>
+                  <p class="prod-desc">Distinct black neck ring, gentle cooing song. Hardy birds that thrive in both indoor and outdoor aviaries.</p>
+                  <div class="prod-footer">
+                    <div><div class="prod-price">Rs 1,800 <small>/ pair</small></div></div>
+                    <button class="btn-add" onclick="enquire('Ringneck Dove')">Enquire →</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-xl-4 prod-item" data-cat="dove" data-price="3200" data-name="Laughing Dove" data-rating="4.5" data-avail="order">
+              <div class="prod-card">
+                <span class="prod-badge badge-rare">Rare</span>
+                <div class="prod-img pb-dove">🕊️</div>
+                <div class="prod-body">
+                  <div class="prod-cat-tag">Dove</div>
+                  <div class="prod-name">Laughing Dove</div>
+                  <div class="prod-species">Spilopelia senegalensis</div>
+                  <div class="prod-stars">★★★★½ <span>(6 reviews)</span></div>
+                  <p class="prod-desc">Named for its bubbling, musical call — this rose-tinged dove is a collector's favourite. Available on order.</p>
+                  <div class="prod-footer">
+                    <div><div class="prod-price">Rs 3,200 <small>/ pair</small></div></div>
+                    <button class="btn-add" onclick="enquire('Laughing Dove')">Enquire →</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── LOVEBIRDS ── -->
+            <div class="col-sm-6 col-xl-4 prod-item" data-cat="lovebird" data-price="3800" data-name="Peach-faced Lovebird" data-rating="5" data-avail="instock">
+              <div class="prod-card">
+                <span class="prod-badge badge-hot">Best Seller</span>
+                <div class="prod-img pb-lovebird">🦜</div>
+                <div class="prod-body">
+                  <div class="prod-cat-tag">Lovebird</div>
+                  <div class="prod-name">Peach-faced Lovebird</div>
+                  <div class="prod-species">Agapornis roseicollis</div>
+                  <div class="prod-stars">★★★★★ <span>(41 reviews)</span></div>
+                  <p class="prod-desc">Our #1 selling bird — vibrant, social, and deeply affectionate. Pairs for life. Hand-tamed from chick stage.</p>
+                  <div class="prod-footer">
+                    <div><div class="prod-price">Rs 3,800 <small>/ pair</small></div></div>
+                    <button class="btn-add" onclick="enquire('Peach-faced Lovebird')">Enquire →</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-xl-4 prod-item" data-cat="lovebird" data-price="5500" data-name="Blue Mutation Lovebird" data-rating="5" data-avail="instock">
+              <div class="prod-card">
+                <span class="prod-badge badge-rare">Rare Colour</span>
+                <div class="prod-img pb-lovebird">🦜</div>
+                <div class="prod-body">
+                  <div class="prod-cat-tag">Lovebird</div>
+                  <div class="prod-name">Blue Mutation Lovebird</div>
+                  <div class="prod-species">Agapornis roseicollis mut.</div>
+                  <div class="prod-stars">★★★★★ <span>(19 reviews)</span></div>
+                  <p class="prod-desc">Striking sky-blue plumage — a sought-after colour mutation. Equally playful and bonded as the classic variety.</p>
+                  <div class="prod-footer">
+                    <div><div class="prod-price">Rs 5,500 <small>/ pair</small></div></div>
+                    <button class="btn-add" onclick="enquire('Blue Mutation Lovebird')">Enquire →</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-xl-4 prod-item" data-cat="lovebird" data-price="6200" data-name="Violet Lovebird" data-rating="4.5" data-avail="instock">
+              <div class="prod-card">
+                <span class="prod-badge badge-new">New Pair</span>
+                <div class="prod-img pb-lovebird">🦜</div>
+                <div class="prod-body">
+                  <div class="prod-cat-tag">Lovebird</div>
+                  <div class="prod-name">Violet Lovebird</div>
+                  <div class="prod-species">Agapornis roseicollis mut.</div>
+                  <div class="prod-stars">★★★★½ <span>(9 reviews)</span></div>
+                  <p class="prod-desc">Deep violet-blue iridescence — one of the most visually stunning mutations available. Limited availability.</p>
+                  <div class="prod-footer">
+                    <div><div class="prod-price">Rs 6,200 <small>/ pair</small></div></div>
+                    <button class="btn-add" onclick="enquire('Violet Lovebird')">Enquire →</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-xl-4 prod-item" data-cat="lovebird" data-price="4200" data-name="Fischer Lovebird" data-rating="4" data-avail="order">
+              <div class="prod-card">
+                <div class="prod-img pb-lovebird">🦜</div>
+                <div class="prod-body">
+                  <div class="prod-cat-tag">Lovebird</div>
+                  <div class="prod-name">Fischer's Lovebird</div>
+                  <div class="prod-species">Agapornis fischeri</div>
+                  <div class="prod-stars">★★★★☆ <span>(7 reviews)</span></div>
+                  <p class="prod-desc">Orange face, green body, blue tail — a naturally multicoloured gem. Available on advance order only.</p>
+                  <div class="prod-footer">
+                    <div><div class="prod-price">Rs 4,200 <small>/ pair</small></div></div>
+                    <button class="btn-add" onclick="enquire('Fischer Lovebird')">Enquire →</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── COCKATIELS ── -->
+            <div class="col-sm-6 col-xl-4 prod-item" data-cat="cockatiel" data-price="4500" data-name="Normal Grey Cockatiel" data-rating="5" data-avail="instock">
+              <div class="prod-card">
+                <span class="prod-badge badge-hot">Top Rated</span>
+                <div class="prod-img pb-cockatiel">🐦</div>
+                <div class="prod-body">
+                  <div class="prod-cat-tag">Cockatiel</div>
+                  <div class="prod-name">Normal Grey Cockatiel</div>
+                  <div class="prod-species">Nymphicus hollandicus</div>
+                  <div class="prod-stars">★★★★★ <span>(35 reviews)</span></div>
+                  <p class="prod-desc">The classic cockatiel — intelligent, whistling, and deeply social. Hand-tamed. Great with children.</p>
+                  <div class="prod-footer">
+                    <div><div class="prod-price">Rs 4,500 <small>/ pair</small></div></div>
+                    <button class="btn-add" onclick="enquire('Normal Grey Cockatiel')">Enquire →</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-xl-4 prod-item" data-cat="cockatiel" data-price="7000" data-name="Lutino Cockatiel" data-rating="5" data-avail="instock">
+              <div class="prod-card">
+                <span class="prod-badge badge-sale">Sale</span>
+                <div class="prod-img pb-cockatiel">🐦</div>
+                <div class="prod-body">
+                  <div class="prod-cat-tag">Cockatiel</div>
+                  <div class="prod-name">Lutino Cockatiel</div>
+                  <div class="prod-species">Nymphicus hollandicus mut.</div>
+                  <div class="prod-stars">★★★★★ <span>(22 reviews)</span></div>
+                  <p class="prod-desc">Golden-yellow with vivid red cheek patches — the crown jewel of cockatiel mutations. Highly affectionate.</p>
+                  <div class="prod-footer">
+                    <div>
+                      <span class="prod-price">Rs 7,000</span>
+                      <span class="prod-price-old">Rs 8,500</span>
+                      <div style="font-size:.72rem; color:var(--muted);">/ pair</div>
+                    </div>
+                    <button class="btn-add" onclick="enquire('Lutino Cockatiel')">Enquire →</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-xl-4 prod-item" data-cat="cockatiel" data-price="3800" data-name="Pied Cockatiel" data-rating="4" data-avail="instock">
+              <div class="prod-card">
+                <div class="prod-img pb-cockatiel">🐦</div>
+                <div class="prod-body">
+                  <div class="prod-cat-tag">Cockatiel</div>
+                  <div class="prod-name">Pied Cockatiel</div>
+                  <div class="prod-species">Nymphicus hollandicus mut.</div>
+                  <div class="prod-stars">★★★★☆ <span>(14 reviews)</span></div>
+                  <p class="prod-desc">Irregular patches of grey and yellow — every pied cockatiel is a unique artwork. Playful and easy to train.</p>
+                  <div class="prod-footer">
+                    <div><div class="prod-price">Rs 3,800 <small>/ single</small></div></div>
+                    <button class="btn-add" onclick="enquire('Pied Cockatiel')">Enquire →</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-xl-4 prod-item" data-cat="cockatiel" data-price="9500" data-name="Whiteface Cockatiel" data-rating="4.5" data-avail="order">
+              <div class="prod-card">
+                <span class="prod-badge badge-rare">Rare</span>
+                <div class="prod-img pb-cockatiel">🐦</div>
+                <div class="prod-body">
+                  <div class="prod-cat-tag">Cockatiel</div>
+                  <div class="prod-name">Whiteface Cockatiel</div>
+                  <div class="prod-species">Nymphicus hollandicus mut.</div>
+                  <div class="prod-stars">★★★★½ <span>(5 reviews)</span></div>
+                  <p class="prod-desc">No yellow or orange — a striking snow-white and grey palette. Among the most prized mutations for collectors.</p>
+                  <div class="prod-footer">
+                    <div><div class="prod-price">Rs 9,500 <small>/ pair</small></div></div>
+                    <button class="btn-add" onclick="enquire('Whiteface Cockatiel')">Enquire →</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── ACCESSORIES ── -->
+            <div class="col-sm-6 col-xl-4 prod-item" data-cat="accessory" data-price="3500" data-name="Premium Bird Cage" data-rating="4.5" data-avail="instock">
+              <div class="prod-card">
+                <span class="prod-badge badge-new">New Arrival</span>
+                <div class="prod-img pb-accessory">🏠</div>
+                <div class="prod-body">
+                  <div class="prod-cat-tag">Accessory</div>
+                  <div class="prod-name">Premium Bird Cage</div>
+                  <div class="prod-species">Powder-coated steel · 24"×18"</div>
+                  <div class="prod-stars">★★★★½ <span>(28 reviews)</span></div>
+                  <p class="prod-desc">Spacious, well-ventilated cage with pull-out tray, multiple perches, and feeding ports. Suitable for lovebirds and cockatiels.</p>
+                  <div class="prod-footer">
+                    <div><div class="prod-price">Rs 3,500</div></div>
+                    <button class="btn-add" onclick="enquire('Premium Bird Cage')">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-xl-4 prod-item" data-cat="accessory" data-price="850" data-name="Natural Wood Perch Set" data-rating="5" data-avail="instock">
+              <div class="prod-card">
+                <div class="prod-img pb-accessory">🪵</div>
+                <div class="prod-body">
+                  <div class="prod-cat-tag">Accessory</div>
+                  <div class="prod-name">Natural Wood Perch Set</div>
+                  <div class="prod-species">Mango wood · Set of 3</div>
+                  <div class="prod-stars">★★★★★ <span>(33 reviews)</span></div>
+                  <p class="prod-desc">Irregular bark texture keeps claws naturally trimmed. Universally fits standard cage bars. Safe, non-toxic finish.</p>
+                  <div class="prod-footer">
+                    <div><div class="prod-price">Rs 850</div></div>
+                    <button class="btn-add" onclick="enquire('Natural Wood Perch Set')">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-xl-4 prod-item" data-cat="accessory" data-price="1200" data-name="Foraging Toy Bundle" data-rating="4.5" data-avail="instock">
+              <div class="prod-card">
+                <div class="prod-img pb-accessory">🎾</div>
+                <div class="prod-body">
+                  <div class="prod-cat-tag">Accessory</div>
+                  <div class="prod-name">Foraging Toy Bundle</div>
+                  <div class="prod-species">5-piece enrichment set</div>
+                  <div class="prod-stars">★★★★½ <span>(17 reviews)</span></div>
+                  <p class="prod-desc">Bells, swings, ladders and foraging pouches — keeps your birds mentally stimulated and physically active all day.</p>
+                  <div class="prod-footer">
+                    <div><div class="prod-price">Rs 1,200</div></div>
+                    <button class="btn-add" onclick="enquire('Foraging Toy Bundle')">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── FOOD ── -->
+            <div class="col-sm-6 col-xl-4 prod-item" data-cat="food" data-price="650" data-name="Premium Seed Mix" data-rating="5" data-avail="instock">
+              <div class="prod-card">
+                <span class="prod-badge badge-hot">Favourite</span>
+                <div class="prod-img pb-food">🌾</div>
+                <div class="prod-body">
+                  <div class="prod-cat-tag">Bird Food</div>
+                  <div class="prod-name">Premium Seed Mix</div>
+                  <div class="prod-species">1 kg · Multi-species blend</div>
+                  <div class="prod-stars">★★★★★ <span>(52 reviews)</span></div>
+                  <p class="prod-desc">Specially formulated blend of millet, canary grass, sunflower and safflower seeds — loved by doves, lovebirds and cockatiels.</p>
+                  <div class="prod-footer">
+                    <div><div class="prod-price">Rs 650 <small>/ kg</small></div></div>
+                    <button class="btn-add" onclick="enquire('Premium Seed Mix')">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-xl-4 prod-item" data-cat="food" data-price="900" data-name="Vitamin Supplement Drops" data-rating="4.5" data-avail="instock">
+              <div class="prod-card">
+                <div class="prod-img pb-food">💊</div>
+                <div class="prod-body">
+                  <div class="prod-cat-tag">Bird Food</div>
+                  <div class="prod-name">Vitamin Supplement Drops</div>
+                  <div class="prod-species">30 ml · Avian formula</div>
+                  <div class="prod-stars">★★★★½ <span>(21 reviews)</span></div>
+                  <p class="prod-desc">Vet-recommended daily vitamin supplement supporting feather health, immunity, and breeding performance. Easy water-soluble drops.</p>
+                  <div class="prod-footer">
+                    <div><div class="prod-price">Rs 900 <small>/ bottle</small></div></div>
+                    <button class="btn-add" onclick="enquire('Vitamin Supplement Drops')">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── BUNDLE ── -->
+            <div class="col-sm-6 col-xl-4 prod-item" data-cat="bundle" data-price="8500" data-name="Starter Bundle" data-rating="5" data-avail="instock">
+              <div class="prod-card">
+                <span class="prod-badge badge-bundle">Bundle Deal</span>
+                <div class="prod-img pb-bundle">🎁</div>
+                <div class="prod-body">
+                  <div class="prod-cat-tag">Bundle</div>
+                  <div class="prod-name">New Bird Starter Bundle</div>
+                  <div class="prod-species">Bird + Cage + Food + Toys</div>
+                  <div class="prod-stars">★★★★★ <span>(13 reviews)</span></div>
+                  <p class="prod-desc">Everything you need on Day 1: one lovebird pair + premium cage + 1 kg seed mix + foraging toy set + care guide booklet. Save Rs 2,200.</p>
+                  <div class="prod-footer">
+                    <div>
+                      <span class="prod-price">Rs 8,500</span>
+                      <span class="prod-price-old">Rs 10,700</span>
+                    </div>
+                    <button class="btn-add" onclick="enquire('Starter Bundle')">Enquire →</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /prod-grid row -->
+
+          <!-- No results -->
+          <div class="no-results" id="no-results">
+            <div class="nr-emoji">🔍</div>
+            <h4>No products found</h4>
+            <p>Try adjusting your filters or search term.</p>
+            <button class="btn-terra mt-3" onclick="resetFilters()">Clear Filters</button>
+          </div>
+
+        </div><!-- /col-lg-9 -->
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </div><!-- /prod-section -->
+</div><!-- /page-products -->
+
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="footer-brand">Asstayyy <span>Aviary</span></div>
+        <div class="footer-tagline">Where Wings Find Their Forever Home.</div>
+        <p style="font-size:.85rem; line-height:1.7; max-width:300px;">Hand-raising doves, lovebirds, and cockatiels in Karachi since 2012. Health-certified, home-ready.</p>
+        <div class="mt-3">
+          <a class="social-btn" href="#">📘</a>
+          <a class="social-btn" href="#">📸</a>
+          <a class="social-btn" href="#">💬</a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <div class="footer-head">Navigate</div>
+        <a class="footer-link" href="#" onclick="showPage('home');return false;">Home</a>
+        <a class="footer-link" href="#" onclick="showPage('products');return false;">Products</a>
+        <a class="footer-link" href="#" onclick="showPage('gallery');return false;">Gallery</a>
+        <a class="footer-link" href="#" onclick="showPage('about');return false;">About Us</a>
+        <a class="footer-link" href="#" onclick="showPage('contact');return false;">Contact</a>
+      </div>
+      <div class="col-6 col-lg-2">
+        <div class="footer-head">Birds</div>
+        <a class="footer-link" href="#" onclick="showPage('gallery');return false;">Doves</a>
+        <a class="footer-link" href="#" onclick="showPage('gallery');return false;">Lovebirds</a>
+        <a class="footer-link" href="#" onclick="showPage('gallery');return false;">Cockatiels</a>
+      </div>
+      <div class="col-lg-4">
+        <div class="footer-head">Quick Contact</div>
+        <p style="font-size:.85rem; line-height:2;">📍 Gulshan-e-Iqbal, Karachi</p>
+        <p style="font-size:.85rem; line-height:2;">📞 +92 300 000 0000</p>
+        <p style="font-size:.85rem; line-height:2;">✉️ info@asstayyaviary.pk</p>
+        <p style="font-size:.85rem; line-height:2;">🕐 Mon–Sat, 9 AM – 6 PM</p>
+      </div>
+    </div>
+    <hr class="footer-divider"/>
+    <div class="footer-bottom d-flex justify-content-between flex-wrap gap-2">
+      <span>© 2024 Asstayyy Aviary. All rights reserved.</span>
+      <span>Crafted by Syed Hassan Ali in Karachi, Pakistan</span>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
